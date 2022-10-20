@@ -14,27 +14,27 @@ const profile = [
     "role" : 'Founder & CEO'
 },
 {
-    "image": '',
+    "image": 'angela-caroll-chief-editor.jpg',
     "name" : 'Angela',
     "role" : 'Chief Editor'
 },
 {
-    "image": '',
+    "image": 'aangela-caroll-chief-editor.jpg',
     "name" : 'Waleter gordon',
     "role" : 'Chief Editor'
 },
 {
-    "image": '',
+    "image": 'angela-lopez-social-media-manager.jpg',
     "name" : 'Waleter gordon',
     "role" : 'Social Media Manager'
 },
 {
-    "image": '',
+    "image": 'scott-estrada-developer.jpg',
     "name" : 'Scott Estrada',
     "role" : 'Developer'
 },
 {
-    "image": '',
+    "image": 'barbara-ramos-graphic-designer.jpg',
     "name" : 'Barbara Ramos',
     "role" : 'Grafic designer'
 }
@@ -57,6 +57,9 @@ for(let key in profile){
 
     ` ;
 
+
+
+    // container.innerHTML += card_profile[key];
 
     container.innerHTML += card_profile;
 }
