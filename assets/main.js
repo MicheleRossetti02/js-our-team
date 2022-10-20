@@ -9,7 +9,7 @@ BONUS 2: Organizzare i singoli membri in card/schede */
 const profile = [
     {
 
-    "image": './img/wayne-barnett-founder-ceo.jpg',
+    "image": 'img.src="wayne-barnett-founder-ceo.jpg"',
     "name" : 'Wayne Barnett',
     "role" : 'Founder & CEO'
 },
@@ -38,7 +38,9 @@ const profile = [
     "name" : 'Barbara Ramos',
     "role" : 'Grafic designer'
 }
-
+// {
+//     "name": ['Wayne Barnett','Angela','Waleter gordon','Waleter gordon','Scott Estrada','Barbara Ramos']
+// }
 
 
 ]
@@ -50,23 +52,36 @@ container = document.querySelector('.container')
 for(let key in profile){
     console.log(profile[key]);
     
+    card_profile=`
+    <div class="casella_profile img"> ${profile.name}  </div>
+
+    ` ;
+
+
+    container.innerHTML += card_profile;
 }
 
 
 
 
-function name(params) {
-    name_profile=`<div class="casella_profile"> ${profile.image}  </div>`;
-    role_profile=`<div class="casella_profile"> ${profile.image}  </div>`;
-    container.innerHTML += name_profile;
-    container.innerHTML += role_profile;
+// function name(params) {
+//     card_profile=`
+//     <div class="casella_profile img"> ${profile.image}  </div>
+//     <div class="casella_profile name"> ${profile.name}  </div>
+//     <div class="casella_profile role"> ${profile.role}  </div>
+//     `
+//     ;
 
-img_profile= `<div class="casella_profile"> ${profile.name}  </div>`;
+//     role_profile=`<div class="casella_profile"> ${profile.image}  </div>`;
+//     container.innerHTML += name_profile;
+//     container.innerHTML += role_profile;
 
-container.innerHTML += img_profile;
+// img_profile= `<div class="casella_profile"> ${profile.name}  </div>`;
+
+
 
 
       
-}
+// }
 
 //console.log(profile);
